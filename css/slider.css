@@ -1,0 +1,6 @@
+.bigSlider i {
+  position: absolute;
+  z-index: 200000000;
+  top: 30%;
+  font-size: 4em;
+}

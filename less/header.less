@@ -1,0 +1,183 @@
+.smallerBtn{
+	-webkit-transition: all 0.5s ;
+	-moz-transition: all 0.5s ;
+	-ms-transition: all 0.5s ;
+	-o-transition: all 0.5s ;
+	transition: all 0.5s ;
+	margin-top: 10% !important;
+}
+.smaller{
+	height: 70px !important;
+
+ 
+	.main-nav{
+		line-height: 5px;
+
+	}
+}  //FIN DE smaller
+.header-total{
+	background-color: #f3f3f3;
+	width: 100% !important;
+	height: 800px;
+	 overflow: hidden;
+}
+
+.header-bar{
+	background-color: rgba(121, 165, 150, .6);
+	width: 100%;
+	height: 107px;
+	position: fixed;
+	z-index: 200;
+	top: 0;
+	-webkit-transition: all 0.5s ;
+	-moz-transition: all 0.5s ;
+	-ms-transition: all 0.5s ;
+	-o-transition: all 0.5s ;
+	transition: all 0.5s ;
+
+		.container{
+			width: 85%;
+		 	height: 107px;
+		 	margin: 0 auto;
+			-webkit-transition: all 0.3s ;
+		    -moz-transition: all 0.3s ;
+		    -ms-transition: all 0.3s ;
+		    -o-transition: all 0.3s ;
+    		transition: all 0.3s ;
+
+
+    		.logo{
+    			width: 210px;
+    			height: 60px;
+    			position: absolute;
+    			top: 50%;
+    			margin-top: -30px;
+    			-webkit-transition: all 0.3s ;
+			    -moz-transition: all 0.3s ;
+			    -ms-transition: all 0.3s ;
+			    -o-transition: all 0.3s ;
+			    transition: all 0.3s ;
+
+			    a{
+			    	width: 100%;  	
+			    	span{
+			    		font-size: 1.2em;
+						color: #fff;
+						position: absolute;
+						top: 50%;
+						font-weight: 600;
+						padding-left: .2em;
+						margin-top: -.6em;
+						left:26% ;
+			    	}
+			    	img{
+			    		position: absolute;
+			    		top: 50%;
+			    		margin-top: -27px;
+			    	}
+			    }
+    		} /* logo */
+		}
+
+		.main-nav{
+			display: inline-block;
+ 			float: right;
+ 			height: 100%;
+
+			display: table;
+		 	ul{
+		 		display: table-cell;
+		 		vertical-align: middle;
+		 		li{
+		 			font-weight: 600;
+					margin-left: 0.5em;
+					display: inline-block;
+					a{
+						&:hover{
+							color: @footer-bg-color;
+						}
+					}
+		 		}
+		 	}//ul
+
+			#menu-btn{
+				-webkit-transition: all 0.5s ;
+				-moz-transition: all 0.5s ;
+				-ms-transition: all 0.5s ;
+				-o-transition: all 0.5s ;
+				transition: all 0.5s ;
+				display: none;
+				background-color:#03979A;
+				color: white;
+				padding: 1.1em;
+				border-radius: 5px;
+				margin-top: 25%;
+				clear: both;
+			}//menu-btn
+		} //end of main-nav
+	} //end of header-bar
+
+#toggle-menu{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 25%;
+	position: relative;
+	float: right;
+	z-index: 100;
+	display: none;
+	ul{
+		margin: 0 ;
+		padding: 0;
+			li{
+				padding: 1em 0;
+				list-style: none;
+				text-align: center;
+				text-transform: uppercase;
+				    border-style: solid;
+				    border-bottom: none;
+				    &:last-child{
+				    	border-bottom: solid;
+				    }
+    
+				a{				
+				text-decoration: none;
+					&:hover{
+						color: black;
+					}
+				}
+			}
+		
+	}
+
+}
+
+
+ .header-total-portfolio,
+ .header-total-about{
+ 		height: 400px;
+ 		box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+ 		background-image: url(../images/volcan.jpg);
+
+	.portfolio{
+		width: 100%;
+		text-align: center;
+		position: relative;
+		top:35%;
+
+			.container{
+
+				h1{	
+					display: inline-block;
+			 		margin: 0 auto;
+					font-family: @heading-font;
+	 				font-weight: 300;
+	 				color: white;
+	 			   	padding: @baseline (@baseline/2);
+	 				background-color: rgba(128,128,128, .5);	
+				}
+			}//container
+		}//portfolio
+	}//header-total-portfolio
+
+ .header-total-about{
+ 	background-image: url(../images/city.jpg);
+ }

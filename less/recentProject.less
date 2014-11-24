@@ -1,0 +1,98 @@
+.contents{
+
+ 
+	background-color: @main-bg-color;
+	position: absolute;
+	text-align: center;
+	top: 600px ; //mantener el area de projectos 600px fixed
+	z-index :100;
+	h1{
+		margin-top: 1em;
+		color:#79a596 ;
+	}
+	h2{
+		color: @footer-strip-color;
+		margin:@theme-margin 0 @baseline 0;
+	}
+	h4{
+		
+		margin: 1em 0px;
+		font-style: italic;
+
+	}
+	a{
+		text-decoration: none;
+	}
+	.container{
+		width: 100%;
+		margin: @baseline auto @theme-margin auto;
+		 
+	}
+
+	.imagenes-row{
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		margin-top: 3%;
+		.miniatura{
+			height: 250px;
+			width: 360px;
+			display: inline-block;
+			position: relative;
+			border: 6px solid @footer-strip-color;
+
+			a{				
+			height: 100%;
+			width: 100%;				
+			display: block;
+				img{
+			height: 100%;
+			width: 100%;
+			position: relative;
+			z-index: 5;
+			
+			
+				}
+				img:hover{
+					opacity: .1;
+
+				}
+			}
+
+		} //miniatura
+
+	}//images-row
+		.hover-contents{
+			height: 250px;
+			width: 360px;	
+			background-color: black;
+			position: absolute;
+			top: 0;
+			h3{
+				font-size: 1em !important;
+				color: #fefefe;
+				padding-top: @baseline;
+
+
+			}
+
+			.details{
+				color: #6e7d8e;
+				letter-spacing:.08em;
+				padding: @baseline 0px ;
+			}
+			p{
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: .75em;
+			}
+		}/*hover-contents*/
+}/*contents*/				
+
+
+
+
+
+.centro{
+	margin: 0 3%;
+}
